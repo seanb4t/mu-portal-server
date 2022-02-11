@@ -1,12 +1,11 @@
 package main
 
 import (
-  "github.com/pkg/errors"
 	"go.uber.org/zap"
 )
 
 func main() {
-  run(nil, nil)
+	run("dev", "localhost")
 }
 
 func run(env string, address string) (<-chan error, error) {

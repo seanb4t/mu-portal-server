@@ -2,10 +2,7 @@ module github.com/seanb4t/mu-portal-server
 
 go 1.17
 
-require (
-	github.com/pkg/errors v0.8.1
-	go.uber.org/zap v1.21.0
-)
+require go.uber.org/zap v1.21.0
 
 require (
 	go.uber.org/atomic v1.7.0 // indirect
