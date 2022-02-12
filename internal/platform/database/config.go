@@ -9,7 +9,6 @@ import (
 // Config holds information necessary for connecting to a database.
 type Config struct {
 	Host string
-	Port int
 	User string
 	Pass string
 	Name string
@@ -21,10 +20,6 @@ type Config struct {
 func (c Config) Validate() error {
 	if c.Host == "" {
 		return errors.New("database host is required")
-	}
-
-	if c.Port == 0 {
-		return errors.New("database port is required")
 	}
 
 	if c.User == "" {
@@ -43,6 +38,10 @@ func (c Config) Validate() error {
 func (c Config) URI() string {
 	var params string
 
+	// Required params for cloud mongo atlas connections
+	c.Params["retryWrites"] = "true"
+	c.Params["w"] = "majority"
+
 	if len(c.Params) > 0 {
 		var query string
 
@@ -58,11 +57,10 @@ func (c Config) URI() string {
 	}
 
 	return fmt.Sprintf(
-		"mongodb://%s:%s@%s:%d/%s%s",
+		"mongodb+srv://%s@%s:%d/%s%s",
 		c.User,
 		c.Pass,
 		c.Host,
-		c.Port,
 		c.Name,
 		params,
 	)

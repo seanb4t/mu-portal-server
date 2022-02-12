@@ -21,7 +21,7 @@ builds:
     - arm64
     mod_timestamp: '{{ .CommitTimestamp }}'
     ldflags:
-    - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.CommitDate}} -X main.builtBy=goreleaser
+    - -s -w -X main.version={{.Version}} -X main.commitHash={{.Commit}} -X main.buildDate={{.CommitDate}} -X main.builtBy=goreleaser
     main: ./cmd/server
 universal_binaries:
 -   id: mu-portal-server

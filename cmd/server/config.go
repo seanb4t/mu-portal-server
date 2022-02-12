@@ -96,6 +96,7 @@ func configure(v *viper.Viper, f *pflag.FlagSet) {
 	v.AddConfigPath("$CONFIG_DIR/")
 
 	// Environment variable settings
+	v.SetEnvPrefix("mu_portal_server")
 	v.SetEnvKeyReplacer(strings.NewReplacer(".", "_", "-", "_"))
 	v.AllowEmptyEnv(true)
 	v.AutomaticEnv()
@@ -134,7 +135,6 @@ func configure(v *viper.Viper, f *pflag.FlagSet) {
 
 	// Database configuration
 	v.SetDefault("database.host", "localhost")
-	v.SetDefault("database.port", 27017)
 	_ = v.BindEnv("database.user")
 	_ = v.BindEnv("database.pass")
 	_ = v.BindEnv("database.name")

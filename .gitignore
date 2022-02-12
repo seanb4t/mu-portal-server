@@ -157,3 +157,6 @@ Temporary Items
 
 # Build output
 dist/
+
+# .env
+.env

@@ -59,5 +59,5 @@ func TestConfig_URI(t *testing.T) {
 
 	uri := config.URI()
 
-	assert.Equal(t, "mongodb://root:@host:27017/database?parseTime=true", uri)
+	assert.Equal(t, "mongodb+srv://root:@host:27017/database?parseTime=true&retryWrites=true&w=majority", uri)
 }
