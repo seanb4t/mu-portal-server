@@ -109,6 +109,7 @@ func configure(v *viper.Viper, f *pflag.FlagSet) {
 	// Log configuration
 	v.SetDefault("log.format", "json")
 	v.SetDefault("log.level", "info")
+	v.SetDefault("log.noColor", false)
 	v.RegisterAlias("log.noColor", "no_color")
 
 	// Telemetry configuration

@@ -11,6 +11,7 @@ require (
 	github.com/kataras/iris/v12 v12.1.8
 	github.com/kataras/neffos v0.0.14
 	github.com/opencensus-integrations/gomongowrapper v0.0.3
+	github.com/rs/zerolog v1.26.1
 	github.com/sagikazarmark/appkit v0.14.0
 	github.com/sagikazarmark/kitx v0.18.0
 	github.com/spf13/pflag v1.0.5
@@ -18,8 +19,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 	go.mongodb.org/mongo-driver v1.3.0
 	go.opencensus.io v0.23.0
-	go.uber.org/zap v1.21.0
-	logur.dev/adapter/zap v0.5.0
+	logur.dev/adapter/zerolog v0.6.0
 	logur.dev/integration/watermill v0.5.0
 	logur.dev/logur v0.17.0
 )
