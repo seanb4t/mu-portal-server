@@ -12,7 +12,7 @@ require (
 	github.com/ThreeDotsLabs/watermill v1.1.1
 	github.com/cloudflare/tableflip v1.2.2
 	github.com/kataras/iris/v12 v12.1.8
-	github.com/kataras/neffos v0.0.14
+	github.com/kataras/neffos v0.0.18
 	github.com/oklog/run v1.1.0
 	github.com/opencensus-integrations/gomongowrapper v0.0.3
 	github.com/rs/zerolog v1.26.1
@@ -52,16 +52,16 @@ require (
 	github.com/go-kit/log v0.2.0 // indirect
 	github.com/go-logfmt/logfmt v0.5.1 // indirect
 	github.com/go-stack/stack v1.8.0 // indirect
-	github.com/gobwas/httphead v0.0.0-20180130184737-2c6c146eadee // indirect
-	github.com/gobwas/pool v0.2.0 // indirect
-	github.com/gobwas/ws v1.0.2 // indirect
+	github.com/gobwas/httphead v0.0.0-20200921212729-da3d93bc3c58 // indirect
+	github.com/gobwas/pool v0.2.1 // indirect
+	github.com/gobwas/ws v1.0.4 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.3 // indirect
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
-	github.com/gorilla/websocket v1.4.1 // indirect
+	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
@@ -82,7 +82,7 @@ require (
 	github.com/lithammer/shortuuid/v3 v3.0.4 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
-	github.com/mediocregopher/radix/v3 v3.4.2 // indirect
+	github.com/mediocregopher/radix/v3 v3.6.0 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.18 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
