@@ -4,12 +4,16 @@ go 1.17
 
 require (
 	contrib.go.opencensus.io/exporter/ocagent v0.7.0
+	contrib.go.opencensus.io/exporter/prometheus v0.4.0
 	emperror.dev/emperror v0.33.0
 	emperror.dev/errors v0.8.0
 	emperror.dev/handler/logur v0.5.0
+	github.com/AppsFlyer/go-sundheit v0.5.0
 	github.com/ThreeDotsLabs/watermill v1.1.1
+	github.com/cloudflare/tableflip v1.2.2
 	github.com/kataras/iris/v12 v12.1.8
 	github.com/kataras/neffos v0.0.14
+	github.com/oklog/run v1.1.0
 	github.com/opencensus-integrations/gomongowrapper v0.0.3
 	github.com/rs/zerolog v1.26.1
 	github.com/sagikazarmark/appkit v0.14.0
@@ -25,9 +29,9 @@ require (
 )
 
 require (
-	cloud.google.com/go/container v1.0.0 // indirect
-	cloud.google.com/go/monitoring v1.2.0 // indirect
-	cloud.google.com/go/trace v1.0.0 // indirect
+	cloud.google.com/go/container v1.1.0 // indirect
+	cloud.google.com/go/monitoring v1.3.0 // indirect
+	cloud.google.com/go/trace v1.1.0 // indirect
 	github.com/BurntSushi/toml v0.3.1 // indirect
 	github.com/CloudyKit/fastprinter v0.0.0-20200109182630-33d98a066a53 // indirect
 	github.com/CloudyKit/jet/v3 v3.0.0 // indirect
@@ -35,8 +39,10 @@ require (
 	github.com/ajg/form v1.5.1 // indirect
 	github.com/aws/aws-sdk-go v1.40.45 // indirect
 	github.com/aymerick/raymond v2.0.3-0.20180322193309-b565731e1464+incompatible // indirect
+	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff/v3 v3.0.0 // indirect
 	github.com/census-instrumentation/opencensus-proto v0.3.0 // indirect
+	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/eknkc/amber v0.0.0-20171010120322-cdade1c07385 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
@@ -73,19 +79,26 @@ require (
 	github.com/kr/pretty v0.3.0 // indirect
 	github.com/lithammer/shortuuid/v3 v3.0.4 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
+	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/mediocregopher/radix/v3 v3.4.2 // indirect
 	github.com/microcosm-cc/bluemonday v1.0.2 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/moul/http2curl v1.0.0 // indirect
-	github.com/nats-io/nats.go v1.12.1 // indirect
+	github.com/nats-io/nats-server/v2 v2.7.2 // indirect
+	github.com/nats-io/nats.go v1.13.1-0.20220121202836-972a071d373d // indirect
 	github.com/nats-io/nkeys v0.3.0 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/prometheus/client_golang v1.11.0 // indirect
+	github.com/prometheus/client_model v0.2.0 // indirect
+	github.com/prometheus/common v0.30.0 // indirect
+	github.com/prometheus/procfs v0.7.3 // indirect
+	github.com/prometheus/statsd_exporter v0.21.0 // indirect
 	github.com/ryanuber/columnize v2.1.0+incompatible // indirect
 	github.com/schollz/closestmatch v2.1.0+incompatible // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
@@ -108,12 +121,12 @@ require (
 	golang.org/x/crypto v0.0.0-20220112180741-5e0467b6c7ce // indirect
 	golang.org/x/net v0.0.0-20220111093109-d55c255bac03 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
-	golang.org/x/sys v0.0.0-20220111092808-5a964db01320 // indirect
+	golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
-	google.golang.org/api v0.63.0 // indirect
-	google.golang.org/genproto v0.0.0-20211223182754-3ac035c7e7cb // indirect
-	google.golang.org/grpc v1.43.0 // indirect
+	google.golang.org/api v0.67.0 // indirect
+	google.golang.org/genproto v0.0.0-20220207164111-0872dc986b00 // indirect
+	google.golang.org/grpc v1.44.0 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect

@@ -26,6 +26,11 @@ type configuration struct {
 		Addr string
 	}
 
+	// Server configuration
+	Server struct {
+		Addr string
+	}
+
 	// OpenCensus configuration
 	Opencensus struct {
 		Exporter struct {
@@ -117,6 +122,11 @@ func configure(v *viper.Viper, f *pflag.FlagSet) {
 	f.String("telemetry-addr", ":10000", "Telemetry HTTP server address")
 	_ = v.BindPFlag("telemetry.addr", f.Lookup("telemetry-addr"))
 	v.SetDefault("telemetry.addr", ":10000")
+
+	// Server configuration
+	f.String("server-addr", ":8080", "HTTP server address")
+	_ = v.BindPFlag("server.addr", f.Lookup("server-addr"))
+	v.SetDefault("server.addr", ":8080")
 
 	// OpenCensus configuration
 	v.SetDefault("opencensus.exporter.enabled", false)

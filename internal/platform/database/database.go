@@ -1,7 +1,9 @@
 package database
 
 import (
+	"context"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"go.mongodb.org/mongo-driver/mongo/readpref"
 
 	"emperror.dev/errors"
 	mongowrapper "github.com/opencensus-integrations/gomongowrapper"
@@ -24,4 +26,14 @@ func NewConnector(config Config) (*mongowrapper.WrappedClient, error) {
 
 	return client, nil
 
+}
+
+func NewDbPingCheck(dbConnector *mongowrapper.WrappedClient) func(ctx context.Context) (details interface{}, err error) {
+	return func(ctx context.Context) (details interface{}, err error) {
+		err = dbConnector.Client().Ping(ctx, readpref.Primary())
+		if err != nil {
+			return nil, errors.WrapIf(err, "failed to ping mongo")
+		}
+		return nil, nil
+	}
 }

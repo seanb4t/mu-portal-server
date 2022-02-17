@@ -9,7 +9,6 @@ import (
 func TestConfig_Validate(t *testing.T) {
 	tests := map[string]Config{
 		"database host is required": {
-			Port: 27017,
 			User: "root",
 			Pass: "",
 			Name: "database",
@@ -22,13 +21,11 @@ func TestConfig_Validate(t *testing.T) {
 		},
 		"database user is required": {
 			Host: "localhost",
-			Port: 27017,
 			Pass: "",
 			Name: "database",
 		},
 		"database name is required": {
 			Host: "localhost",
-			Port: 27017,
 			User: "root",
 			Pass: "",
 		},
@@ -48,9 +45,8 @@ func TestConfig_Validate(t *testing.T) {
 func TestConfig_URI(t *testing.T) {
 	config := Config{
 		Host: "host",
-		Port: 27017,
 		User: "root",
-		Pass: "",
+		Pass: "pass",
 		Name: "database",
 		Params: map[string]string{
 			"parseTime": "true",
@@ -59,5 +55,5 @@ func TestConfig_URI(t *testing.T) {
 
 	uri := config.URI()
 
-	assert.Equal(t, "mongodb+srv://root:@host:27017/database?parseTime=true&retryWrites=true&w=majority", uri)
+	assert.Equal(t, "mongodb+srv://root:pass@host/database?parseTime=true&retryWrites=true&w=majority", uri)
 }

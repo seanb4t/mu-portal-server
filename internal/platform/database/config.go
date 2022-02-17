@@ -41,6 +41,7 @@ func (c Config) URI() string {
 	// Required params for cloud mongo atlas connections
 	c.Params["retryWrites"] = "true"
 	c.Params["w"] = "majority"
+	c.Params["loadBalanced"] = "true"
 
 	if len(c.Params) > 0 {
 		var query string
@@ -57,7 +58,7 @@ func (c Config) URI() string {
 	}
 
 	return fmt.Sprintf(
-		"mongodb+srv://%s@%s:%d/%s%s",
+		"mongodb+srv://%s:%s@%s/%s%s",
 		c.User,
 		c.Pass,
 		c.Host,
