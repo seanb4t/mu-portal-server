@@ -6,7 +6,7 @@ require (
 	contrib.go.opencensus.io/exporter/ocagent v0.7.0
 	contrib.go.opencensus.io/exporter/prometheus v0.4.0
 	emperror.dev/emperror v0.33.0
-	emperror.dev/errors v0.8.0
+	emperror.dev/errors v0.8.1
 	emperror.dev/handler/logur v0.5.0
 	github.com/AppsFlyer/go-sundheit v0.5.0
 	github.com/ThreeDotsLabs/watermill v1.1.1

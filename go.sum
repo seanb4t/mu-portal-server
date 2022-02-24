@@ -64,8 +64,9 @@ contrib.go.opencensus.io/exporter/stackdriver v0.12.4/go.mod h1:fmn/xkyUfUhd1iD7
 dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7gZCb22OMCxBHrMx7a5I7Hp++hsVxbQ4BYO7hU=
 emperror.dev/emperror v0.33.0 h1:urYop6KLYxKVpZbt9ADC4eVG3WDnJFE6Ye3j07wUu/I=
 emperror.dev/emperror v0.33.0/go.mod h1:CeOIKPcppTE8wn+3xBNcdzdHMMIP77sLOHS0Ik56m+w=
-emperror.dev/errors v0.8.0 h1:4lycVEx0sdJkwDUfQ9pdu6SR0x7rgympt5f4+ok8jDk=
 emperror.dev/errors v0.8.0/go.mod h1:YcRvLPh626Ubn2xqtoprejnA5nFha+TJ+2vew48kWuE=
+emperror.dev/errors v0.8.1 h1:UavXZ5cSX/4u9iyvH6aDcuGkVjeexUGJ7Ij7G4VfQT0=
+emperror.dev/errors v0.8.1/go.mod h1:YcRvLPh626Ubn2xqtoprejnA5nFha+TJ+2vew48kWuE=
 emperror.dev/handler/logur v0.5.0 h1:8oZDe5NR33N0iEpp83wDZaxVnOSvMy3wAX/bcsj8m1I=
 emperror.dev/handler/logur v0.5.0/go.mod h1:nP0NEWTstehSg2zrisjQPOU9ev4SO4/4hed3rmJlU18=
 github.com/AndreasBriese/bbloom v0.0.0-20190306092124-e2d15f34fcf9/go.mod h1:bOvUY6CB00SOBii9/FifXqc0awNKxLFCL/+pkDPuyl8=
