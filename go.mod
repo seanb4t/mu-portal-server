@@ -20,7 +20,7 @@ require (
 	github.com/sagikazarmark/kitx v0.18.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.10.1
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.1
 	go.mongodb.org/mongo-driver v1.8.3
 	go.opencensus.io v0.23.0
 	logur.dev/adapter/zerolog v0.6.0
